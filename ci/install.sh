@@ -1,3 +1,6 @@
+# Based on the "trust" template v0.1.2
+# https://github.com/japaric/trust/tree/v0.1.2
+
 set -ex
 
 main() {
