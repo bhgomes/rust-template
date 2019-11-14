@@ -13,7 +13,7 @@ _{PROJECTDESCRIPTION}_
 
 </div>
 
-# Installation
+## Installation
 
 ```bash
 cargo install {PROJECTNAME}
