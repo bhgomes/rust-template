@@ -15,6 +15,8 @@ _{PROJECTDESCRIPTION}_
 
 ## Installation
 
+This crate can be installed by running the following command:
+
 ```bash
 cargo install {PROJECTNAME}
 ```
