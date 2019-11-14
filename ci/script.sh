@@ -1,8 +1,10 @@
+# Based on the "trust" template v0.1.2
+# https://github.com/japaric/trust/tree/v0.1.2
+
 # This script takes care of testing your crate
 
 set -ex
 
-# TODO This is the "test phase", tweak it as you see fit
 main() {
     cross build --target $TARGET
     cross build --target $TARGET --release
