@@ -3,13 +3,9 @@
 
 environment:
   global:
-  # TODO This is the Rust channel that build jobs will use by default but can be
-  # overridden on a case by case basis down below
     RUST_VERSION: stable
     CRATE_NAME: {PROJECTNAME}
 
-  # TODO These are all the build jobs. Adjust as necessary. Comment out what you
-  # don't need
   matrix:
     # MinGW
     - TARGET: i686-pc-windows-gnu
@@ -38,7 +34,6 @@ install:
   - rustc -Vv
   - cargo -V
 
-# TODO This is the "test phase", tweak it as you see fit
 test_script:
   # we don't run the "test phase" when doing deploys
   - if [%APPVEYOR_REPO_TAG%]==[false] (
@@ -51,7 +46,6 @@ test_script:
     )
 
 before_deploy:
-  # TODO Update this to build the artifacts that matter to you
   - cargo rustc --target %TARGET% --release --bin hello -- -C lto
   - ps: ci\before_deploy.ps1
 
@@ -65,10 +59,6 @@ deploy:
     secure: t3puM/2hOig26EHhAodcZBc61NywF7/PFEpimR6SwGaCiqS07KR5i7iAhSABmBp7
   description: ''
   on:
-    # TODO Here you can pick which targets will generate binary releases
-    # In this example, there are some targets that are tested using the stable
-    # and nightly channels. This condition makes sure there is only one release
-    # for such targets and that's generated using the stable channel
     RUST_VERSION: stable
     appveyor_repo_tag: true
   provider: GitHub
