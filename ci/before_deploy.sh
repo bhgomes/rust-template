@@ -1,3 +1,6 @@
+# Based on the "trust" template v0.1.2
+# https://github.com/japaric/trust/tree/v0.1.2
+
 # This script takes care of building your crate and packaging it for release
 
 set -ex
@@ -17,11 +20,9 @@ main() {
 
     test -f Cargo.lock || cargo generate-lockfile
 
-    # TODO Update this to build the artifacts that matter to you
-    cross rustc --bin hello --target $TARGET --release -- -C lto
-
-    # TODO Update this to package the right artifacts
-    cp target/$TARGET/release/hello $stage/
+    cross rustc --bin {PROJECTNAME} --target $TARGET --release -- -C lto
+    
+    cp target/$TARGET/release/{PROJECTNAME} $stage/
 
     cd $stage
     tar czf $src/$CRATE_NAME-$TRAVIS_TAG-$TARGET.tar.gz *
