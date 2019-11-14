@@ -1,0 +1,10 @@
+[package]
+name = "{PROJECTNAME}"
+version = "0.1.0"
+description = "{PROJECTDESCRIPTION}"
+license = "Unlicense"
+authors = ["{USERNAME} <{EMAIL}>"]
+repository = "https://github.com/{USERNAME}/{PROJECTNAME}"
+edition = "2018"
+
+[dependencies]
