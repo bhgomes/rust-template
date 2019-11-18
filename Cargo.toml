@@ -1,10 +1,21 @@
 [package]
 name = "{PROJECTNAME}"
 version = "0.1.0"
+
 description = "{PROJECTDESCRIPTION}"
+readme = "README.md"
 license = "Unlicense"
+
 authors = ["{USERNAME} <{EMAIL}>"]
 repository = "https://github.com/{USERNAME}/{PROJECTNAME}"
+homepage = "https://github.com/{USERNAME}/{PROJECTNAME}"
+
+travis-ci = { repository = "{USERNAME}/{PROJECTNAME}", branch = "master" }
+appveyor  = { repository = "{USERNAME}/{PROJECTNAME}", branch = "master", service = "github" }
+coveralls = { repository = "{USERNAME}/{PROJECTNAME}", branch = "master", service = "github" }
+
+maintenance = { status = "actively-developed" }
+
 edition = "2018"
 
 [dependencies]
