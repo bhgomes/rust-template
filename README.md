@@ -2,7 +2,7 @@
 
 # {PROJECTNAME}
 
-[![Travis Build Status](https://img.shields.io/travis/{USERNAME}/{PROJECTNAME}.svg?style=flat-square)](https://travis-ci.org/{USERNAME}/{PROJECTNAME})
+[![Travis Build Status](https://img.shields.io/travis/{USERNAME}/{PROJECTNAME}.svg?style=flat-square)](https://travis-ci.com/{USERNAME}/{PROJECTNAME})
 [![AppVeyor Build Status](https://img.shields.io/appveyor/ci/{USERNAME}/{PROJECTNAME}?style=flat-square)](https://ci.appveyor.com/project/{USERNAME}/{PROJECTNAME})
 [![Coveralls Coverage Status](https://img.shields.io/coveralls/github/{USERNAME}/{PROJECTNAME}?style=flat-square)](https://coveralls.io/github/{USERNAME}/{PROJECTNAME})
 [![Build Template](https://img.shields.io/badge/CI%20template-trust-orange?style=flat-square)](https://github.com/japaric/trust)
