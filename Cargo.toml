@@ -9,6 +9,7 @@ license = "Unlicense"
 authors = ["{USERNAME} <{EMAIL}>"]
 repository = "https://github.com/{USERNAME}/{PROJECTNAME}"
 homepage = "https://github.com/{USERNAME}/{PROJECTNAME}"
+documentation = "https://docs.rs/crate/{PROJECTNAME}"
 
 travis-ci = { repository = "{USERNAME}/{PROJECTNAME}", branch = "master" }
 appveyor  = { repository = "{USERNAME}/{PROJECTNAME}", branch = "master", service = "github" }
