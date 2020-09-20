@@ -25,7 +25,7 @@ cargo install {PROJECTNAME}
 <div align="center">
 
 [![Author](https://img.shields.io/badge/Author-{USERNAME}-blue?style=for-the-badge)](https://github.com/{USERNAME})
-[![License](https://img.shields.io/badge/(UN)-LICENSE-lightgray?style=for-the-badge)](UNLICENSE)
+[![License](https://img.shields.io/badge/LICENSE-lightgray?style=for-the-badge)](LICENSE)
 [![GitHub Repo](https://img.shields.io/badge/repo-GitHub-black?style=for-the-badge)](https://github.com/{USERNAME}/{PROJECTNAME})
 
 </div>
